@@ -1,0 +1,88 @@
+body { 
+    background-image: url("../img/baloes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+} /*Adicao de um plano de fundo*/
+/* Comentario de elementos nao utilizados
+header {
+    background-color: #3e434a;
+	width: 100%;
+    height: 15%;
+    margin-top: -10px;
+}
+
+header a {
+    text-decoration: none;
+    float: left;
+    color: #9c034f;
+}
+
+header a span {
+	text-decoration: none;
+    color: #ff007f;
+}
+
+header a:hover {
+	text-decoration: none;
+    color: #ff007f;
+}
+
+section {
+    background-color: gray;
+    height: 600px;
+    width: 100%;
+    float: left;
+}
+*/
+#sorteador {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+} /*Ajuste de elemento de sorteio*/
+
+#quadroBranco{
+    width: 400px;
+    height: 400px;
+}/*Posiciona o botao ao centro*/
+
+#tamfixo {
+    --height: 300px; /*Declara e armazena valor na variavel*/
+    --width: 400px;  /*Declara e armazena valor na variavel*/
+    height: var(--height);
+    width: var(--width);
+} /*Mantem o botao na mesma posicao nas trocas*/
+img {
+    height: var(--height);
+    width: var(--width);
+    visibility: hidden; /*Esconde imagem na primeira execucao*/
+}
+#button {
+    position: relative;
+   font-weight: bolder; 
+   margin-left: 133px;
+   margin-top: 40px;
+} /*Alteracao de tamanho e posicao*/
+footer {
+    position: absolute;
+    background-color: #ddd9ce;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+    height: 115px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    clear: both;
+    transition: all 1.2s ease 0.2s;
+} /*Alteracao no footer*/
+footer > span {
+    font-family: arial;
+} /*Define uma fonte para o footer*/
+footer:hover{
+    margin-top: -90px;
+    height: 190px;
+    transition: all 1.2s ease 0.2s;
+} /*Adiciona animacao ao footer*/
